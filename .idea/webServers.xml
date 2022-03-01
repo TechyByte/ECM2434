@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1703af24-38a1-4400-b904-f319bfe2e556" name="DevRPi" url="http://10.4.20.55">
+        <fileTransfer rootFolder="/home/pi/" accessType="SFTP" host="10.4.20.55" port="22" sshConfigId="853eaa69-dbc3-4c85-b1da-56e76ec90983" sshConfig="pi@10.4.20.55:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

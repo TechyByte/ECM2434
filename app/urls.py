@@ -20,8 +20,9 @@ from capturecampus import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("register", views.register_request, name="register"),
-    path("login", views.login_request, name="login"),
-    path("logout", views.logout_request, name="logout"),
-    path("home", views.home, name="home")
+    path("", views.landing_page_request, name="landingpage"),
+    path("register/", views.register_request, name="register"),
+    path("login/", views.login_request, name="login"),
+    path("logout/", views.logout_request, name="logout"),
+    path("home/", views.home, name="home")
 ]
