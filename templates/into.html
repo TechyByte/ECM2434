@@ -1,0 +1,47 @@
+{% extends "header.html" %}
+
+{% load static %}
+
+
+{% block content %}
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+  
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <div class="container px-5 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Armoury</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          </div>
+        <p>
+            <iframe  src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.1293212391165!2d-3.5359085842916462!3d50.7360902795158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da446f4220751%3A0xebfcda14a774d043!2sUniversity%20of%20Exeter%2C%20INTO!5e0!3m2!1sen!2suk!4v1648041337184!5m2!1sen!2suk" width="600" height="350" style="border:auto;" allowfullscreen="" loading="lazy"></iframe>
+        </p>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          </div>
+  
+      </div>
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          </div>
+        <p><img align="right" src= "{% static 'capturecampus\media\Into_building.jpg'%}" width="400" height="350" style="border:auto;"></p>
+      </div>
+      
+    </div>
+  </div>
+  <p>
+    The INTO Centre is the place to go to attend classes, study and hang out with friends during your pathway programme, located opposite the Forum – a £48 million technology-rich study and social space that houses lecture theatres, an extensive 24/7 library, a Student Services Centre, a bank, shops and more</p>
+   {% endblock %}

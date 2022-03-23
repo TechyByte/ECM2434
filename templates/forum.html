@@ -1,0 +1,51 @@
+{% extends "header.html" %}
+
+{% load static %}
+
+
+{% block content %}
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+<div class="container px-5 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom">Armoury</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <div class="feature-icon bg-primary bg-gradient">
+        </div>
+      <p>
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4293.895490279878!2d-3.537663137084512!3d50.73683770378733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da444223039ab%3A0xfe908f3ea68dad67!2sUniversity%20of%20Exeter%20Forum%20Library!5e0!3m2!1sen!2suk!4v1648040785918!5m2!1sen!2suk" width="600" height="350" style="border:auto;" allowfullscreen="" loading="lazy"></iframe>
+      </p>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon bg-primary bg-gradient">
+        </div>
+
+    </div>
+    <div class="feature col">
+      <div class="feature-icon bg-primary bg-gradient">
+        </div>
+      <p><img align="right" src= "{% static 'capturecampus\media\Forum.jpg'%}" width="400" height="350" style="border:auto;"></p>
+    </div>
+    
+  </div>
+</div>
+<p>
+    What's on in the Forum
+    The Forum is a stunning £48 million centrepiece at the heart of the Streatham Campus.
+    
+    The inspirational mix of outside and inside space includes a Student Services Centre, library, retail and catering outlets and technology-rich learning spaces</p>
+    
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "header.html" %}
+
+{% load static %}
+
+
+{% block content %}
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+  
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <div class="container px-5 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Armoury</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          </div>
+        <p>
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.2396329729845!2d-3.5372706825561466!3d50.73404420000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da4113c8130b1%3A0x77373b2168b9fd76!2sUniversity%20of%20Exeter%20Queen&#39;s%20Building!5e0!3m2!1sen!2suk!4v1648041437982!5m2!1sen!2suk" width="600" height="350" style="border:auto;" allowfullscreen="" loading="lazy"></iframe>
+        </p>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          </div>
+  
+      </div>
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          </div>
+        <p><img align="right" src= "{% static 'capturecampus\media\Queens.jpg'%}" width="400" height="350" style="border:auto;"></p>
+      </div>
+      
+    </div>
+  </div>
+  <p>
+    The Queen’s Building is built around an attractive lawned garden and can be accessed from three sides. This large building benefits from multiple lecture theatres, flexible meeting rooms, seminar rooms and social spaces, making it a great choice for a range of different events.</p>
+   {% endblock %}

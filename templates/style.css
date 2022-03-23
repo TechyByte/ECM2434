@@ -1,0 +1,115 @@
+.center {
+    padding: 70px 0;
+    border: 3px solid rgb(238, 238, 238);
+    text-align: center;
+  }
+  .title {
+    background-color: #ffffff;
+    text-align: center;
+    border: 3px solid black;
+
+  }
+  .a{
+      font-size: 140px;
+  }
+  .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p {
+    text-align: center;
+}
+.leaderboards{
+
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-top: 100px;
+  width: 0%;
+
+}
+.play{
+
+  margin-left: 100px;
+  margin-top: auto;
+  margin-right: 260px;
+  width: 0%;
+
+}
+.home1{
+    margin-top: 100px;
+    margin-left: 550px;
+}
+.logo{
+    margin-top: 70px;
+}
+.settings{
+    margin-top: -400px;
+    margin-left: 1700px;
+}
+.logout{
+    margin-top: -400px;
+    margin-left: 10px;
+}
+
+.html{
+
+    background-image: url('images/background1.png');
+}
+.body{
+ background-color:transparent;
+
+}
+.changeuser{
+    margin-left: 250px;
+    margin-top: -150px;
+
+}
+.changepass{
+    margin-left: -210px;
+    margin-top: -55px;
+
+}
+.contactus{
+    margin-left: -210px;
+    margin-top: 40px;
+
+}
+.holder {
+
+    background-repeat: no-repeat;
+    margin-top:-350px;
+}
+input[type=text], input[type=password] {
+    width: 15%;
+    padding: 10px 10px;
+    margin-left: 710px;
+    margin-top: 175px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.input[type=textagain], input[type=password]{
+    width: 15%;
+    padding: 10px 10px;
+    margin-left: 710px;
+    margin-top: 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.approve{
+    background-image: url('images/play.png');
+    background-repeat: no-repeat;
+}
+.icon1{
+    margin-top: 250px;
+    margin-left: 200px;
+}
+.icon2{
+    margin-top: 280px;
+    margin-left:1000px;
+}
+.icon3{
+    margin-top: 310px;
+    margin-left: 200px;
+}

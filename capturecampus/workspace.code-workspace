@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\templates"
+		},
+		{
+			"path": "..\\.idea"
+		},
+		{
+			"path": "..\\app"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\ECM2434-master"
+		}
+	]
+}
