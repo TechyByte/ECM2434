@@ -57,3 +57,10 @@ Prerequisite downloads to run source code:
         link: https://docs.djangoproject.com/en/1.8/howto/windows/#:~:text=Django%20can%20be%20installed%20easily,version%20in%20the%20command%20prompt.
     - Crispy Forms
         link: https://django-crispy-forms.readthedocs.io/en/latest/install.html
+
+## HOW TO PLAY
+Player: 
+Upon entering the website, create an account with your email. Once your account is created you will be prompted to join one of the teams available on your campus. You are then sent to the play screen, where you'll be able to see all the different flags you can capture. To get to a flag you can click on the listed flags next to the map to see where they are. You will then have to make your way to the location, once there you must press capture a flag and say which flag you are capturing !
+
+Game keeper:
+You're account is a super user account, meaning you can create flags on the campus for players to collect as well as teams they can join. To do so you must click on the create flag or create team prompts and follow the instructions. But don't worry you can still play!!!!
