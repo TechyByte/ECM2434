@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
-
+<!-- Loads in cripsy forms -->
  
 <head>
+  <!-- Css for images and background -->
     <style> 
         .div1 {
           width: 300px;
@@ -212,19 +213,24 @@
         
        
         </style>
+
   <title>Main page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
+<!-- The logout button image-->
 <a href="/logout"><button>
     <img  src= "{% static 'capturecampus\media\back.png'%}">
       </button></a>
 <header class='title'>
     <h1><center><img  src= "{% static 'capturecampus\media\capture.png'%}"></center></h1>
   </header>
+
+<!-- Background image and the 3 icons for about us -->
 <body style=  "background-image: url( '{% static "capturecampus\media\background1.png" %}');">
 <img  src= "{% static 'capturecampus\media\icon1.png'%}">
 <img  src= "{% static 'capturecampus\media\icon2.png'%}">

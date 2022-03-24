@@ -1,9 +1,13 @@
+<!-- This beginning loads in cripsy forms -->
 {% extends "header.html" %}
 {% load static %}
 {% block content %}
 
 {% load crispy_forms_tags %}
 
+<!-- THIS IS AN ADMIN-ONLY PAGE -->
+
+<!-- This container is a form to create a flag -->
 <div class="container py-5">
     <h1><img  src= "{% static 'capturecampus\media\Add Flag.png' %}" width="300" height="150"></h1>
     

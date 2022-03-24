@@ -1,9 +1,15 @@
+<!-- Loads in crispy forms  -->
 {% extends "header.html" %}
 
 {% load static %}
 
 
 {% block content %}
+
+<!-- This is a single page for the Business School Building with its description
+This is to describe it as a flag -->
+
+<!-- Css for placeholder and description fo business school -->
 <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -25,6 +31,8 @@
       }
     }
   </style>
+
+  <!-- Google maps directions to the flag -->
   <div class="container px-5 py-5" id="featured-3">
     <h2 class="pb-2 border-bottom"><img  src= "{% static 'capturecampus\media\BUSINESS.png'%}" width="200" height="150"></h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -38,7 +46,7 @@
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
           </div>
-  
+  <!-- Image for the business school -->
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">

@@ -1,9 +1,14 @@
+<!-- Loading in crispy forms -->
 {% extends "header.html" %}
 
 {% load static %}
 
 
 {% block content %}
+
+<!-- This is a single page for the Amory Building with its description -->
+
+<!-- Css for placeholder and the description of the Amory -->
 <style>
   .bd-placeholder-img {
     font-size: 1.125rem;
@@ -24,6 +29,8 @@
     }
   }
 </style>
+
+<!-- Map functionality to open google maps -->
 <div class="container px-4 py-5" id="featured-3">
   <h2 class="pb-2 border-bottom"><img  src= "{% static 'capturecampus\media\amory.png'%}" width="200" height="150"></h2>
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -39,6 +46,7 @@
         </div>
 
     </div>
+    <!-- Amory picture -->
     <div class="feature col">
       <div class="feature-icon bg-primary bg-gradient">
         </div>
