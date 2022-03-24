@@ -3,9 +3,12 @@ from django.db import models
 
 # Create your models here
 # Classes for the models used in the game
-# Created by Monty Batt Adam Brooks Mobayode Fashanu George Hynes.
+# Created by Mobayode Fashanu, comments by Monty Batt.
 
 class Team(models.Model):
+    #This class allows us to store all the members of a team along with the points the team have.
+    #This class contains methods that allow to return the top player of a team and get 
+    # the scores of other teams
     name= models.CharField(max_length=250)
     score_1= models.IntegerField(default=0)
     def getName(self):
@@ -36,10 +39,15 @@ class Team(models.Model):
         if x == 0:
             return ""
         return "\n" + "Top Player: "+ y + "\n" + "Score: " + str(x)
+
+
 class Player(models.Model):
+    #The Player class stores all information about players.
+    #The getFlag() method allows us to see a list of all the different flags
     team = models.ForeignKey("Team",  on_delete=models.CASCADE)
     name = models.CharField(max_length=250, default='Player')
     score = models.IntegerField(default=0)
+
     def captured_flag(self,x):
         self.score += x
         self.save()
@@ -61,7 +69,11 @@ class Player(models.Model):
         for y in Flag.objects.all():
             x.append(y)
         return x
+
+#These aree the locations at which flags can be placed.
 LOCATIONS = [('INTO','Into'),('FORUM','Forum'),('QUEENS BUILDING','Queens building'),('AMOURY,Amoury'),('EAST PARK','East park'),('BUISNESS SCHOOL','Buisness School'),('ROWE HOUSE','Rowe House'),('SPORT PARK','Sport park'),('WASHINGTON SINGER','Washington Singer')]
+
+
 class Flag(models.Model):
     score = models.IntegerField(default=1)
     location = models.CharField(max_length=250,default="Forum")
