@@ -1,9 +1,15 @@
+<!-- Crispy forms initalize -->
 {% extends "header.html" %}
 
 {% load static %}
 
 
 {% block content %}
+
+<!-- This is a single page for the Rowe with its description
+This is to describe it as a flag -->
+
+<!-- Css for placeholder and description of Rowe -->
 <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -24,6 +30,7 @@
       }
     }
   </style>
+  <!-- IMAGE OF ROWE -->
   <div class="container px-5 py-5" id="featured-3">
     <h2 class="pb-2 border-bottom"><img  src= "{% static 'capturecampus\media\ROWE.png'%}" width="400" height="200"></h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -31,19 +38,21 @@
         <div class="feature-icon bg-primary bg-gradient">
           </div>
         <p>
+          <!-- GOOGLE MAP DIRECTIOSN TO ROWE -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.1881091472837!2d-3.5292385842916607!3d50.73499987951561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da4418b10e18f%3A0x324422d5daa88c5b!2sRowe%20House%2C%20St%20German&#39;s%20Rd%2C%20Exeter%20EX4%206TJ!5e0!3m2!1sen!2suk!4v1648052537483!5m2!1sen!2suk"  width="600" height="350" style="border:auto;" allowfullscreen="" loading="lazy"></iframe>
         </p>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
           </div>
-  
+
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
           </div>
         <p><img align="right" src= "{% static 'capturecampus\media\Rowe.jpg'%}" width="400" height="350" style="border:auto;"></p>
         <p class="desc">
+          <!-- THIS IS THE description -->
           Rowe House has 139 en-suite rooms arranged into flats of seven with large well equipped kitchens and living areas. The residence is close to Cornwall House with its social activities and open air swimming pool. </p>
       </div>
       

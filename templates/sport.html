@@ -1,9 +1,15 @@
+<!-- cripsy forms initializing -->
 {% extends "header.html" %}
 
 {% load static %}
 
 
 {% block content %}
+
+<!-- This is a single page for the sports park with its description
+This is to describe it as a flag -->
+
+<!-- Css for placeholder and description of SPORTS PARK -->
 <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -31,6 +37,7 @@
         <div class="feature-icon bg-primary bg-gradient">
           </div>
         <p>
+          <!-- GOOGLE MAPS TO SPORTS PARK -->
             <iframe  src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4293.895490279878!2d-3.537663137084512!3d50.73683770378733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da445848b6e3b%3A0xbc4733b3147fbe51!2sUniversity%20of%20Exeter%20Sports%20Park!5e0!3m2!1sen!2suk!4v1648040736420!5m2!1sen!2suk" width="600" height="350" style="border:auto;" allowfullscreen="" loading="lazy"></iframe>
         </p>
       </div>
@@ -42,8 +49,10 @@
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
           </div>
+          <!-- IMAGE of sports park -->
         <p><img align="right" src= "{% static 'capturecampus\media\Sport_park.jpg'%}" width="400" height="350" style="border:auto;"></p>
         <p class="desc">
+          <!-- Description -->
           Over £6.5 million has been invested to ensure that the Russell Seal Fitness Centre provides the ultimate gym experience for all customers. The 200 station fitness centre offers users the latest technological innovations alongside state-of-the-art Life Fitness™ equipment to maximise workouts at all levels. All are welcome to visit the Centre for a tour with one of our members of staff, and we also provide an online virtual tour of the facilities. There are different membership packages available, all of which are available to purchase online. You can also complete a free online induction for the centre to help you get started and train safely.</p>
       </div>
       
