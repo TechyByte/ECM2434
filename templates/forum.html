@@ -12,6 +12,11 @@
     -moz-user-select: none;
     user-select: none;
   }
+  .desc {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: smaller;
+    }
 
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
@@ -20,7 +25,7 @@
   }
 </style>
 <div class="container px-5 py-5" id="featured-3">
-  <h2 class="pb-2 border-bottom">Armoury</h2>
+  <h2 class="pb-2 border-bottom"><img  src= "{% static 'capturecampus\media\forum.png'%}" width="200" height="150"></h2>
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="feature col">
       <div class="feature-icon bg-primary bg-gradient">
@@ -38,14 +43,15 @@
       <div class="feature-icon bg-primary bg-gradient">
         </div>
       <p><img align="right" src= "{% static 'capturecampus\media\Forum.jpg'%}" width="400" height="350" style="border:auto;"></p>
+      <p class="desc">
+        What's on in the Forum
+        The Forum is a stunning £48 million centrepiece at the heart of the Streatham Campus.
+        
+        The inspirational mix of outside and inside space includes a Student Services Centre, library, retail and catering outlets and technology-rich learning spaces</p>
     </div>
     
   </div>
 </div>
-<p>
-    What's on in the Forum
-    The Forum is a stunning £48 million centrepiece at the heart of the Streatham Campus.
-    
-    The inspirational mix of outside and inside space includes a Student Services Centre, library, retail and catering outlets and technology-rich learning spaces</p>
+
     
 {% endblock %}

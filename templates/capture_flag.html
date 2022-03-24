@@ -1,4 +1,5 @@
 {% extends 'header.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -7,7 +8,7 @@
 <!--Register-->
 <div class="container py-5">
 	<form method="POST">
-		<h1>Capture a flag</h1>
+		<h1><img  src= "{% static 'capturecampus\media\CAPTURE FLAG.png'%}"width="300" height="150"></h1>
 		<h5>Please use your username to store flag under you player</h5>
 		{% csrf_token %}
 		{{ form| crispy }}

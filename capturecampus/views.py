@@ -59,7 +59,7 @@ def into(request):
 def sport(request):
     flag = Flag.objects.all()
     return render(request, template_name= "sport.html")
-def amoury(request):
+def amory(request):
     flag = Flag.objects.all()
     return render(request, template_name= "amoury.html")
 def east(request):
@@ -79,6 +79,8 @@ def forum(request):
     return render(request, template_name= "forum.html")
 def landing_page_request(request):
     return render(request, template_name= "landingpage.html")
+def about(request):
+    return render(request, template_name= "about.html")
 
 def teamcreate_request(request):
     if request.method == "POST":

@@ -1,11 +1,11 @@
 {% extends "header.html" %}
-
+{% load static %}
 {% block content %}
 
 {% load crispy_forms_tags %}
 
 <div class="container py-5">
-    <h1>Create a Flag</h1>
+    <h1><img  src= "{% static 'capturecampus\media\Add Flag.png' %}" width="300" height="150"></h1>
     
     <form method="POST">
       {% csrf_token %}

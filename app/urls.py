@@ -34,12 +34,13 @@ urlpatterns = [
     path("QUEENS/", views.queens, name="Queens"),
     path("INTO/", views.into, name="Into"),
     path("SPORT/", views.sport, name="sport"),
-    path("AMOURY/", views.amoury, name="amoury"),
+    path("AMORY/", views.amory, name="amory"),
     path("EAST/", views.east, name="East"),
     path("BUISNESS/", views.buisness, name="buisness"),
     path("ROWE/", views.rowe, name="rowe"),
     path("WASHINGTON/", views.washington, name="washington"),
     path("FORUM/", views.forum, name="forum"),
+    path("about/", views.about, name="forum"),
     path("playercreation/", views.playercreate_request, name="playercreation")
 
 ]

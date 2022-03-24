@@ -73,7 +73,7 @@ class FlagForm(forms.ModelForm):
             flag.save()
         return flag
 LOCATIONS = [
-    ('INTO','Into'),('FORUM','Forum'),('QUEENS BUILDING','Queens building'),('AMOURY','Amoury'),('EAST PARK','East park'),('BUISNESS SCHOOL','Buisness School'),('ROWE HOUSE','Rowe House'),('SPORT PARK','Sport park'),('WASHINGTON SINGER','Washington Singer')]
+    ('INTO','Into'),('FORUM','Forum'),('QUEENS BUILDING','Queens building'),('AMORY','Amory'),('EAST PARK','East park'),('BUISNESS SCHOOL','Buisness School'),('ROWE HOUSE','Rowe House'),('SPORT PARK','Sport park'),('WASHINGTON SINGER','Washington Singer')]
 POINTS = [(1,'1'),(3,'3'),(5,'5')]
 class NewFlagForm(forms.ModelForm):
     location =  forms.ChoiceField(choices=LOCATIONS)

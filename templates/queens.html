@@ -12,6 +12,11 @@
       -moz-user-select: none;
       user-select: none;
     }
+    .desc {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: smaller;
+    }
   
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
@@ -20,7 +25,7 @@
     }
   </style>
   <div class="container px-5 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Armoury</h2>
+    <h2 class="pb-2 border-bottom"><img  src= "{% static 'capturecampus\media\QUEENS.png'%}" width="200" height="150"></h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
@@ -38,10 +43,11 @@
         <div class="feature-icon bg-primary bg-gradient">
           </div>
         <p><img align="right" src= "{% static 'capturecampus\media\Queens.jpg'%}" width="400" height="350" style="border:auto;"></p>
+        <p class="desc">
+          The Queen’s Building is built around an attractive lawned garden and can be accessed from three sides. This large building benefits from multiple lecture theatres, flexible meeting rooms, seminar rooms and social spaces, making it a great choice for a range of different events.</p>
       </div>
       
     </div>
   </div>
-  <p>
-    The Queen’s Building is built around an attractive lawned garden and can be accessed from three sides. This large building benefits from multiple lecture theatres, flexible meeting rooms, seminar rooms and social spaces, making it a great choice for a range of different events.</p>
+  
    {% endblock %}

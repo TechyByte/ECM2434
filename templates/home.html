@@ -1,5 +1,5 @@
 {% extends "header.html" %}
-
+{% load static %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +16,20 @@
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: #111;
+      background-color: orange;
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
+      font-family: sans-serif;
+      text-align: justify;
+      border-radius: 25px;
+    }
+
+    .sidebar .h2 {
+      font-weight: bold;
     }
     .divlocation{
           height: 100px;
-          background-color: transparent;
           position: relative;
           float: left;
           border: 10px black;
@@ -34,7 +40,7 @@
           height: 100px;
           position: relative;
           float: right;
-          border: 5px white;
+          border: 5px transparent;
           
 
     }
@@ -45,10 +51,12 @@
       color: #818181;
       display: block;
       transition: 0.3s;
+      border-radius: 25px;
+      margin-left: 20px;
     }
     
     .sidebar a:hover {
-      color: #f1f1f1;
+      color: pink;
     }
     
     .sidebar .closebtn {
@@ -62,15 +70,40 @@
     .openbtn {
       font-size: 20px;
       cursor: pointer;
-      background-color: #111;
+      background-color: orange;
       color: white;
-      padding: 10px 15px;
+      padding: 25px 40px;
       border: none;
+      border-radius: 25px;
+      margin-left: 5px;
     }
     
     .openbtn:hover {
-      background-color: #444;
+      background-color: purple;
     }
+
+    .bullet {
+      color: orange;
+      font-size: medium;
+    }
+
+    .bullet:hover {
+      color: red;
+      font-weight: bold;
+      font-size: large;
+      text-decoration: none;
+    }
+
+    .center {
+    padding: 10px 0;
+    border: 3px solid transparent;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: bold;
+    text-align: center;
+  }
     
     #main {
       transition: margin-left .5s;
@@ -89,18 +122,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
-<body> 
-  <button class="openbtn" onclick="openNav()"> Open Sidebar</button>  
+<body>
+  <h1 class="center" ><img  src= "{% static 'capturecampus\media\capture.png'%}"></h1>
+  <button class="openbtn" onclick="openNav()">SCORES</button>  
 <div class="container">
   <div class="row">
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <h2 style="color:white">My score</h2>
+      <h2 style="color: purple">My Score</h2>
       <br>
-      <p style="color:white">{{Player.name}} - {{Player.score}}</p>
+      <h4 style="font-size: xx-large;"> {{Player.score}}</h4>
       <br>
-      <h3 style="color:white">{{Player.team.getName}}</h3>
+      <h2 style="color: purple">Your Team</h2>
       <br>
       {% for player in Player.team.getPlayers %}
       <li style="color:white">{{player}}</li>
@@ -108,7 +143,7 @@
     <br>
     <br>
     <br>
-    <h3 style="color:white">Top Players for each Team</h3>
+    <h2 style="color: purple">Top Players</h2>
     {% for player in Player.team.get_other_teams %}
         <li style="color:white">{{player}}</li>
         <br>
@@ -129,15 +164,18 @@
       document.getElementById("main").style.marginLeft= "0";
     }
     </script>
+
     <div class="divlocation">
-      <h2>Flag Scores and Locations</h2>
+      <h2><img  src= "{% static 'capturecampus\media\FLAG AND LOCATION.png'%}" width="200" height="100"></h2>
         {% for x in Flag %}
-        <li><a href = /{{x.get_location}}>{{x}}</li></a>
         <br>
+        <ul style="list-style: none;"><li><a href = /{{x.get_location}} class="bullet">{{x}}</li></a></ul>
+      
+        
         {% endfor %}
     </div>
     <div class="divmap">
-      <h3>YOUR LOCATION</h3>        
+      <h3><img  src= "{% static 'capturecampus\media\YOUR LOCATION.png'%}" width="200" height="100"></h3>        
       <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
 if (navigator.geolocation) {

@@ -35,7 +35,7 @@ class Team(models.Model):
                 y = p.getName()
         if x == 0:
             return ""
-        return " their top player is "+ y + " " + "with a score of " + str(x)
+        return "\n" + "Top Player: "+ y + "\n" + "Score: " + str(x)
 class Player(models.Model):
     team = models.ForeignKey("Team",  on_delete=models.CASCADE)
     name = models.CharField(max_length=250, default='Player')
@@ -67,7 +67,7 @@ class Flag(models.Model):
     location = models.CharField(max_length=250,default="Forum")
     code = models.CharField(max_length=250)
     def __str__(self):
-        return "Flag at "+ self.location +" with  " + str(self.score) + " points"
+        return "Flag at "+ self.location +" with  " + str(self.score) + " Points"
     def get_score(self):
         return self.score
     def get_code(self):

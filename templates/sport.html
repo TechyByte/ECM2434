@@ -12,6 +12,11 @@
       -moz-user-select: none;
       user-select: none;
     }
+    .desc {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: smaller;
+    }
   
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
@@ -20,7 +25,7 @@
     }
   </style>
   <div class="container px-5 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Armoury</h2>
+    <h2 class="pb-2 border-bottom"><img  src= "{% static 'capturecampus\media\SPORTS PARK.png'%}"width="200" height="150"></h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
@@ -38,10 +43,11 @@
         <div class="feature-icon bg-primary bg-gradient">
           </div>
         <p><img align="right" src= "{% static 'capturecampus\media\Sport_park.jpg'%}" width="400" height="350" style="border:auto;"></p>
+        <p class="desc">
+          Over £6.5 million has been invested to ensure that the Russell Seal Fitness Centre provides the ultimate gym experience for all customers. The 200 station fitness centre offers users the latest technological innovations alongside state-of-the-art Life Fitness™ equipment to maximise workouts at all levels. All are welcome to visit the Centre for a tour with one of our members of staff, and we also provide an online virtual tour of the facilities. There are different membership packages available, all of which are available to purchase online. You can also complete a free online induction for the centre to help you get started and train safely.</p>
       </div>
       
     </div>
   </div>
-  <p>
-    Over £6.5 million has been invested to ensure that the Russell Seal Fitness Centre provides the ultimate gym experience for all customers. The 200 station fitness centre offers users the latest technological innovations alongside state-of-the-art Life Fitness™ equipment to maximise workouts at all levels. All are welcome to visit the Centre for a tour with one of our members of staff, and we also provide an online virtual tour of the facilities. There are different membership packages available, all of which are available to purchase online. You can also complete a free online induction for the centre to help you get started and train safely.</p>
+  
 {% endblock %}
