@@ -1,14 +1,32 @@
+<!-- Crispy forms initializing -->
+
 {% extends "header.html" %}
 {% load static %}
 {% block content %}
+
+
+
+<!-- This is the HOME PAGE for the app, things that will be shows:
+- Map
+- Listing the Flags that direct to each flag page
+- Sidebar which is the Leaderboard
+
+-->
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Many css files for all the design -->
   <style>
     body {
       font-family: "Lato", sans-serif;
     }
     
+    /* sidebar is the leaderboard and scores, all css design */
     .sidebar {
       height: 100%;
       width: 0;
@@ -28,6 +46,8 @@
     .sidebar .h2 {
       font-weight: bold;
     }
+
+    /* this is where the map shows */
     .divlocation{
           height: 100px;
           position: relative;
@@ -67,6 +87,7 @@
       margin-left: 50px;
     }
     
+    /* button to open the leaderboard sidebar */
     .openbtn {
       font-size: 20px;
       cursor: pointer;
@@ -82,6 +103,7 @@
       background-color: purple;
     }
 
+    /* bullet points the flags */
     .bullet {
       color: orange;
       font-size: medium;
@@ -124,11 +146,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
 </head>
+
+
+
 <body>
   <h1 class="center" ><img  src= "{% static 'capturecampus\media\capture.png'%}"></h1>
   <button class="openbtn" onclick="openNav()">SCORES</button>  
 <div class="container">
   <div class="row">
+    <!-- This is the Leaderboard -->
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <h2 style="color: purple">My Score</h2>
@@ -153,6 +179,7 @@
       
     </div>
     
+    <!-- Small script to get ID of elements -->
     <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
@@ -165,6 +192,7 @@
     }
     </script>
 
+<!-- Images for each flag -->
     <div class="divlocation">
       <h2><img  src= "{% static 'capturecampus\media\FLAG AND LOCATION.png'%}" width="200" height="100"></h2>
         {% for x in Flag %}
@@ -175,8 +203,13 @@
         {% endfor %}
     </div>
     <div class="divmap">
-      <h3><img  src= "{% static 'capturecampus\media\YOUR LOCATION.png'%}" width="200" height="100"></h3>        
-      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      <h3><img  src= "{% static 'capturecampus\media\YOUR LOCATION.png'%}" width="200" height="100"></h3>    
+
+<!-- This script is what shows the MAP
+Using javascript to show the map and save the variables needed
+Variables needed : COORDINATES
+-->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (p) {
@@ -203,6 +236,8 @@ if (navigator.geolocation) {
 }
 
 </script>
+
+<!-- THIS shows the actual map -->
 <div id="dvMap" style="width: 500px; height: 500px">
 </div>
       

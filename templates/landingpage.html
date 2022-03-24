@@ -2,8 +2,17 @@
 <html lang="en">
 {% load static %}
 
+<!-- 
+THIS IS THE LANDING PAGE
+                      or in other words the index
+
+This is where you can choose to LOGIN or REGISTER
+
+ -->
+
  
 <head>
+  <!-- CSS for buttons to login and register -->
     <style> 
         .div1 {
           margin: auto;
@@ -31,10 +40,10 @@
 <header class='title'>
     <h1><center><img  src= "{% static 'capturecampus\media\capture.png'%}"></center></h1>
   </header>
-
+<!-- BACKGROUND IMAGE -->
 <body style=  "background-image: url( '{% static "capturecampus\media\background1.png" %}');">
     
-    
+    <!-- BUTTON TO LOGIN (image) -->
     <div class="div1">
   <center><a href="/login" ><button>
     <img  src= "{% static 'capturecampus\media\login.png'%}">
@@ -43,6 +52,7 @@
   <br>
   <br>
   <br>
+  <!-- BUTTON TO REGISTER (image) -->
   <a href="/register"><center><button>
 <img  src= "{% static 'capturecampus\media\register.png'%}">
   </button></center></a>

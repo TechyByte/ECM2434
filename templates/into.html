@@ -1,9 +1,15 @@
+<!-- CRISPY FORMS initializing -->
 {% extends "header.html" %}
 
 {% load static %}
 
 
 {% block content %}
+
+<!-- This is a single page for the INTO Building with its description
+This is to describe it as a flag -->
+
+<!-- Css for placeholder and description fo INTO building -->
 <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -23,6 +29,8 @@
       }
     }
   </style>
+
+<!-- This shows the Google map description to INTO -->
   <div class="container px-5 py-5" id="featured-3">
     <h2 class="pb-2 border-bottom"><img  src= "{% static 'capturecampus\media\INTO.png'%}" width="200" height="150"></h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -41,8 +49,11 @@
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
           </div>
+
+        <!-- IMPLEMENTING IMAGE OF INTO -->
         <p><img align="right" src= "{% static 'capturecampus\media\Into_building.jpg'%}" width="400" height="350" style="border:auto;"></p>
         <p class="desc">
+          <!-- Description of INTO -->
           The INTO Centre is the place to go to attend classes, study and hang out with friends during your pathway programme, located opposite the Forum – a £48 million technology-rich study and social space that houses lecture theatres, an extensive 24/7 library, a Student Services Centre, a bank, shops and more</p>
       </div>
       

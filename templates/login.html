@@ -1,3 +1,4 @@
+<!-- CRISPY FORMS initalizing -->
 {% extends "header.html" %}
 {% load static %}
 <style> 
@@ -9,13 +10,21 @@
 
 {% load crispy_forms_tags %}
 
+<!-- 
+  This is the login page.
+  Consists of a form using CRISPY FORMS
+ -->
+
+
 <!--Login-->
 <body>
 <div class="container py-auto">
   <div class="container mx-5">
+    <!-- Login image for button -->
     <h1><center><img  src= "{% static 'capturecampus\media\login1.png'%}"></center></h1>
   
   <div1>
+    <!-- Creates form and uses crispy forms to display the form -->
   <form method="POST">
     {% csrf_token %}
   
@@ -23,6 +32,7 @@
 
     <button class="btn btn-primary" type="submit">Login</button>
   </form>
+  <!-- THIS TAKES YOU TO THE REGISTER PAGE -->
   <p class="text-center">Don't have an account? <a href="/register">Create an account</a>.</p>
 </div>
 </div>
