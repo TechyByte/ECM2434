@@ -43,7 +43,6 @@ Technical documents are broken down into front end and back end etc.
 ## PRODUCT DOCUMENTS
 We have included product documents such as a video demonstration of the UI, sketches of the website design and flow charts:
 
-
 UI: 
 [./product-documents/UI](./product-documents/UI)
 
@@ -52,9 +51,9 @@ Sketches and flowcharts:
 
 ## PREREQUISITES
 Prerequisite downloads to run source code:
-    - Python
-
-    - Django 
+    - Python 3.8
+        link: https://www.python.org/downloads/
+    - Django 4.0
+        link: https://docs.djangoproject.com/en/1.8/howto/windows/#:~:text=Django%20can%20be%20installed%20easily,version%20in%20the%20command%20prompt.
     - Crispy Forms
-
-To launch server 
+        link: https://django-crispy-forms.readthedocs.io/en/latest/install.html
