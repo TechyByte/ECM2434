@@ -73,8 +73,8 @@ class Player(models.Model):
 #These aree the locations at which flags can be placed.
 LOCATIONS = [('INTO','Into'),('FORUM','Forum'),('QUEENS BUILDING','Queens building'),('AMOURY,Amoury'),('EAST PARK','East park'),('BUISNESS SCHOOL','Buisness School'),('ROWE HOUSE','Rowe House'),('SPORT PARK','Sport park'),('WASHINGTON SINGER','Washington Singer')]
 
-
 class Flag(models.Model):
+    #The Flag class stores the score that a flag will give to a player, it's coordinates and it's location
     score = models.IntegerField(default=1)
     location = models.CharField(max_length=250,default="Forum")
     code = models.CharField(max_length=250)
